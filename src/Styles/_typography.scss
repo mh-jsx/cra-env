@@ -1,0 +1,391 @@
+@import "./variables";
+
+// =========================================================
+//                          Defaults
+// =========================================================
+* {
+  scrollbar-color: #dbdbdb transparent;
+  scrollbar-width: thin;
+  // text-transform: capitalize;
+}
+
+.custom-scroll::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+}
+
+body,
+html {
+  font-family: "Plus Jakarta Display", sans-serif !important;
+}
+body {
+  background-color: #f8f8f8 !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.flex-1 {
+  flex: 1 !important;
+}
+.flex-1-5 {
+  flex: 1.5 !important;
+}
+
+// =========================================================
+//                          Over flow
+// =========================================================
+
+// =========================================================
+//                          Font sizes
+// =========================================================
+
+.f-10 {
+  font-size: 10px !important;
+}
+.f-12 {
+  font-size: 12px !important;
+}
+.f-14 {
+  font-size: 14px !important;
+}
+.f-16 {
+  font-size: 16px !important;
+}
+.f-20 {
+  font-size: 20px !important;
+}
+.f-24 {
+  font-size: 24px !important;
+}
+
+// =========================================================
+//                          Font Weight
+// =========================================================
+
+// light
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+// regular
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+// medium
+.fw-500 {
+  font-weight: 500 !important;
+}
+// semi-bold
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+// bold
+.fw-700 {
+  font-weight: 700 !important;
+}
+// extra-bold
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+// =========================================================
+//                          Margins/Paddings
+// =========================================================
+
+.mt-4-px {
+  margin-top: 4px !important;
+}
+.ml-4-px {
+  margin-left: 4px !important;
+}
+.mr-5 {
+  margin-right: 5px !important;
+}
+.ml-5 {
+  margin-left: 5px !important;
+}
+.m-t-5 {
+  margin-top: 5px !important;
+}
+.mt-6 {
+  margin-top: 6px !important;
+}
+.mr-7 {
+  margin-right: 7px !important;
+}
+.mb-7 {
+  margin-bottom: 7px !important;
+}
+.ml-8 {
+  margin-left: 8px !important;
+}
+.mr-8 {
+  margin-right: 8px !important;
+}
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.ml-9 {
+  margin-left: 9px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.ml-10 {
+  margin-left: 10px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-11 {
+  margin-bottom: 11px !important;
+}
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.mb-13 {
+  margin-bottom: 13px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mr-16 {
+  margin-right: 16px !important;
+}
+.ml-16 {
+  margin-left: 16px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mb-18 {
+  margin-bottom: 18px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.ml-20 {
+  margin-left: 20px !important;
+}
+.mb-22 {
+  margin-bottom: 22px !important;
+}
+.mt-22 {
+  margin-top: 22px !important;
+}
+.mt-24 {
+  margin-top: 24px !important;
+}
+.ml-24 {
+  margin-left: 24px !important;
+}
+.mr-24 {
+  margin-right: 24px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+.mb-29 {
+  margin-bottom: 29px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mr-30 {
+  margin-right: 30px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mb-36 {
+  margin-bottom: 36px !important;
+}
+.ml-37 {
+  margin-left: 37px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.ml-40 {
+  margin-left: 40px !important;
+}
+.mb-44 {
+  margin-bottom: 44px !important;
+}
+.ml-49 {
+  margin-left: 49px !important;
+}
+.mx-49 {
+  margin-left: 49px !important;
+  margin-right: 49px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+.mr-53 {
+  margin-right: 53px !important;
+}
+.ml-60 {
+  margin-left: 60px !important;
+}
+.mr-80 {
+  margin-right: 80px !important;
+}
+.mb-83 {
+  margin-bottom: 83px !important;
+}
+.mr-95 {
+  margin-right: 95px !important;
+}
+.mr-170 {
+  margin-right: 170px !important;
+}
+.mr-250 {
+  margin-right: 250px !important;
+}
+
+// =========================================================
+//                          width/height
+// =========================================================
+
+.w-60-p {
+  width: 60%;
+}
+.w-214 {
+  width: 214px !important;
+}
+.w-25-px {
+  width: 25px !important;
+}
+.w-47-p {
+  width: 47% !important;
+}
+.w-270 {
+  width: 270px !important;
+}
+
+// =========================================================
+//                          Color
+// =========================================================
+
+.color-danger {
+  color: #ff0000 !important;
+}
+.color-success {
+  color: #40af3c !important;
+}
+.color-warning {
+  color: #ef932a !important;
+}
+.color-info {
+  color: #3e98ff !important;
+}
+.color-gray {
+  color: #a1a1a1 !important;
+}
+.color-silver-chalice {
+  color: #9f9f9f !important;
+}
+.color-primary {
+  color: #1768ac !important;
+}
+.color-secondary {
+  color: #343379 !important;
+}
+.color-Active {
+  color: #40af3c !important;
+}
+.color-inActive {
+  color: red !important;
+}
+.color-apple {
+  color: #40af3c !important;
+}
+.color-green-spring {
+  color: #b3bcb3 !important;
+}
+.color-dodge-blue {
+  color: #3e98ff !important;
+}
+.color-black {
+  color: #000000 !important;
+}
+// =========================================================
+//                          Line height
+// =========================================================
+
+.gap-12 {
+  gap: 20px !important;
+}
+
+.translateY-50-p {
+  transform: translateY(50%);
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+}
+
+.test-bar {
+  animation: bar-animation 2s ease-in;
+  animation-delay: 1s;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes bar-animation {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.horizontal-divider {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+
+.line-36 {
+  line-height: 36px !important;
+}
+
+.gap-24 {
+  gap: 24px;
+}

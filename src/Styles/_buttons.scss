@@ -1,0 +1,52 @@
+// primary button
+
+.primary-button {
+  width: 134px !important;
+  height: 36px !important;
+  background: #1768ac 0% 0% no-repeat padding-box !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+// default button
+.default-button {
+  width: 134px !important;
+  height: 36px !important;
+  border: 1px solid #1768ac !important;
+  border-radius: 4px !important;
+  color: #1768ac !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+.btn-role {
+  width: 105px !important;
+  span {
+    font-weight: 500 !important;
+  }
+}
+
+.btn-print {
+  font-size: 14px !important;
+  width: 92px !important;
+  height: 40px !important;
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  border: 1px solid #1768ac !important;
+  border-radius: 4px !important;
+  span {
+    font-weight: 500 !important;
+  }
+
+  img {
+    margin-right: 9px !important;
+  }
+}

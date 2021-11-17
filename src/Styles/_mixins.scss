@@ -1,0 +1,13 @@
+@mixin AlignMiddleTransform {
+  top: 0 !important;
+  left: 0 !important;
+}
+@mixin AlignMiddleFlex {
+  display: flex !important;
+}
+
+@mixin BGImageDefault {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
