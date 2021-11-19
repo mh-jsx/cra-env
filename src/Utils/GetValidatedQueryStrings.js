@@ -1,8 +1,8 @@
 /**
- * @param  {Object} query
- * @returns {string} // return concatenated query string
+ * @param  {Object} query - The query object to filter keys which are null, undefined or empty strings
+ * @returns {string} Concatenated query string.
  */
-export const GetValidatedQueryStrings = (query) => {
+export function GetValidatedQueryStrings(query) {
   let string = "";
   const keys = Object.keys(query);
 
@@ -16,4 +16,4 @@ export const GetValidatedQueryStrings = (query) => {
     string && string !== "" && `?${string.substring(0, string.length - 1)}`;
 
   return queryString;
-};
+}
