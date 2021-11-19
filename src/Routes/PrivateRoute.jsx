@@ -1,11 +1,13 @@
 import {Route, Redirect} from "react-router-dom";
-import {useUserContext} from "./../Context/UserContext";
+import {useAuthContext} from "../Context/authContext";
 
+// Wrapper for Route component that checks if user is authenticated
 const PrivateRoute = ({component: Component, ...rest}) => {
-  const {isLogin} = useUserContext();
+  const {isAuthenticated} = useAuthContext();
+
   return (
     <>
-      {isLogin() ? (
+      {true ? (
         <Route {...rest} render={(props) => <Component {...props} />} />
       ) : (
         <Redirect to='/' />

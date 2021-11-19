@@ -6,10 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // bundle include bootstrap js & popper js
+import ProvideAuth from "./Context/authContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProvideAuth>
+      <App />
+    </ProvideAuth>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,8 +1,3 @@
-body {
-  background: yellow;
-}
-// fonts 
-
 // default sass imports
 
 @import "./Styles/variables";
@@ -11,9 +6,9 @@ body {
 @import "./Styles/mixins";
 @import "./Styles/reset";
 @import "./Styles/typography";
+@import "./Styles/utilities";
 
 @import "./Styles/antdDefault";
 @import "./Styles/default";
-
 
 // sass imports for pages

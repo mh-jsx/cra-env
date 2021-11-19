@@ -1,15 +1,14 @@
 import React, {createContext, useState, useContext} from "react";
 
-const UserContext = createContext();
-export const useUserContext = () => useContext(UserContext);
+const authContext = createContext();
+export const useAuthContext = () => useContext(authContext);
 
-export default function UserProvider(props) {
+export default function ProvideAuth(props) {
   const [user, setUser] = useState(
     sessionStorage.getItem("user")
       ? JSON.parse(sessionStorage.getItem("user"))
       : null
   );
-  const [scope, setScope] = useState([]);
 
   // update login info in session storage
   const login = (data) => {
@@ -25,35 +24,31 @@ export default function UserProvider(props) {
   };
 
   // return current user data
-  const getUser = () => {
+  const getCurrentUser = () => {
     return user;
   };
 
   // login check
-  const isLogin = () => {
+  const isAuthenticated = () => {
     return user?.token ? true : false;
   };
 
   // return current user token
-  const token = () => {
+  const getAuthenticationToken = () => {
     return user?.token ? user?.token : null;
   };
 
   return (
-    <UserContext.Provider
+    <authContext.Provider
       value={{
         login,
         logout,
-        getUser,
-        isLogin,
-        token,
+        getCurrentUser,
+        isAuthenticated,
+        getAuthenticationToken,
       }}
     >
       {props.children}
-    </UserContext.Provider>
+    </authContext.Provider>
   );
 }
-
-
-
-

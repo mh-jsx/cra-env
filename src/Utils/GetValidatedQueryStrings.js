@@ -1,6 +1,7 @@
-// • filtered the values (check undefined, null, empty string)
-// • return concatenated query string
-
+/**
+ * @param  {Object} query
+ * @returns {string} // return concatenated query string
+ */
 export const GetValidatedQueryStrings = (query) => {
   let string = "";
   const keys = Object.keys(query);
